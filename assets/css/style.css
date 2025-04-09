@@ -20,6 +20,11 @@ h2 {
     color: #184f63; /* dark-blue */
 }
 
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0;
+}
+
 /* About section */
 
 #about {
@@ -30,6 +35,19 @@ h2 {
 
 #portfolio {
     background-color: #dbdcde; /* light grey */
+}
+
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
 }
 
 /* Contact section */
@@ -47,4 +65,12 @@ h2 {
     background-position: 50% 70%;
     min-height: 500px;
     padding: 5% 7%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
